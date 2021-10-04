@@ -41,7 +41,7 @@
 }
 
 input:checked + .slider {
-	background-color: #fff;
+	background-color: #000;
 }
 
 input:focus + .slider {
@@ -53,7 +53,7 @@ input:checked + .slider:before {
 	-ms-transform: translateX(26px);
 	transform: translateX(26px);
 	content: "\f186";
-	background-color: #000;
+	background-color: #fff;
 }
 
 .slider.round {
@@ -62,4 +62,30 @@ input:checked + .slider:before {
 
 .slider.round:before {
 	border-radius: 50%;
+}
+
+/* color palette */
+/* Light Side */
+:root,
+[data-theme="default"] {
+	--bg-body: #ddd;
+	--logo: grey;
+	--wht-1: #fff;
+	--wht: #fff;
+	--bck: #000;
+	--bck-1: #000;
+	--travel-list-color: #ececec;
+	--img-bright: brightness(100%);
+}
+
+/* Dark Side */
+[data-theme="dark"] {
+	--bg-body: #4b4b4b;
+	--logo: #fff;
+	--wht-1: #fff;
+	--wht: #000;
+	--bck: #000;
+	--bck-1: #fff;
+	--travel-list-color: #353535;
+	--img-bright: brightness(90%);
 }

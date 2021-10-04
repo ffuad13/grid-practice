@@ -1,4 +1,10 @@
 /* FullHD */
+@media (max-width: 1099px) {
+	.menu {
+		order: -1;
+		grid-template-columns: 1fr;
+	}
+}
 @media (max-width: 1024px) {
 	.menu {
 		order: inherit;
@@ -13,6 +19,7 @@
 		display: block;
 		padding: 5px;
 		margin-bottom: 5px;
+		color: var(--bc);
 	}
 
 	.hero {
@@ -28,6 +35,10 @@
 	.menu {
 		order: -1;
 		justify-items: end;
+	}
+
+	.menu a {
+		background-color: var(--bck-1);
 	}
 
 	.menu-toggle {

@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,400&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
 * {
 	margin: 0;
 	padding: 0;
@@ -7,12 +6,13 @@
 
 img {
 	width: 100%;
+	filter: var(--img-bright);
 }
 
 body {
-	background-color: #ddd;
+	background-color: var(--bg-body);
 	font-size: 18px;
-	font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+	font-family: "Ubuntu", sans-serif;
 	margin: 50px;
 }
 
@@ -34,6 +34,7 @@ body {
 	grid-area: hero;
 	min-height: 300px;
 	background-image: url(/img/img1.jpg);
+	filter: var(--img-bright);
 	background-size: cover;
 	padding: 50px;
 }
@@ -43,8 +44,7 @@ body {
 }
 
 .features {
-	background-color: #000;
-	color: #fff;
+	color: var(--wht);
 	display: grid;
 	place-content: center;
 	text-align: center;
@@ -54,12 +54,14 @@ body {
 .feature-1 {
 	grid-area: feature-1;
 	background-image: url(/img/img2.jpg);
+	filter: var(--img-bright);
 	background-size: cover;
 }
 
 .feature-2 {
 	grid-area: feature-2;
 	background-image: url(/img/img3.jpg);
+	filter: var(--img-bright);
 	background-size: cover;
 }
 
@@ -73,13 +75,13 @@ body {
 .menu {
 	order: -1;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 100px 1fr;
 	align-items: center;
 }
 
 .menu .logo {
 	font-size: 1.3em;
-	color: grey;
+	color: var(--logo);
 }
 
 .menu ul {
@@ -91,8 +93,8 @@ body {
 
 .menu a {
 	display: block;
-	background-color: black;
-	color: white;
+	background-color: var(--bck-1);
+	color: var(--wht);
 	text-decoration: none;
 	text-align: center;
 	padding: 5px;
@@ -164,7 +166,7 @@ body {
 }
 
 .travel-list {
-	background-color: rgb(202, 202, 202);
+	background-color: var(--travel-list-color);
 	padding: 15px;
 	text-align: center;
 	border: 1px solid #aaa;
@@ -172,15 +174,17 @@ body {
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
-.travel .icon {
+.travel-list .icon {
 	font-size: 2.5em;
 }
 
-.travel h3 {
+.travel-list h3 {
+	color: var(--bck-1);
 	font-size: 1.5em;
 }
 
-.tarvel p {
+.travel-list p {
+	color: var(--bck-1);
 	font-weight: 200;
 	font-size: 0.8em;
 }
@@ -194,6 +198,7 @@ body {
 }
 
 .gallery h2 {
+	color: var(--bck-1);
 	grid-column: 1 / -1;
 	text-align: center;
 	margin-bottom: 20px;
