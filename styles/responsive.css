@@ -58,7 +58,11 @@
 }
 
 /* Phone */
-@media (max-width: 696px) {
+@media (max-width: 600px) {
+	body {
+		margin: 10px;
+	}
+
 	.header {
 		grid-template-areas:
 			"hero"
