@@ -154,3 +154,33 @@ body {
 	opacity: 0;
 	transform: scale(0);
 }
+
+/* travel */
+.travel {
+	margin-top: 5px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 15px;
+}
+
+.travel-list {
+	background-color: rgb(202, 202, 202);
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.travel .icon {
+	font-size: 2.5em;
+}
+
+.travel h3 {
+	font-size: 1.5em;
+}
+
+.tarvel p {
+	font-weight: 200;
+	font-size: 0.8em;
+}
